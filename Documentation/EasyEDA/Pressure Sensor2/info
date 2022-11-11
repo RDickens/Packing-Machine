@@ -1,0 +1,1878 @@
+{
+  "uuid": "789466b9aed5e34de9cc0c035d895ffb",
+  "path": "Offline/Pressure%20Sensor2",
+  "name": "Pressure Sensor2",
+  "content": "",
+  "created_at": "2022-11-06 18:38:07",
+  "updated_at": "2022-11-08 21:08:00",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "7845938acd5d15ebf2de9441ff3bafb5",
+      "title": "Sheet_2",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "ff07c0a181c247e99f56a71e99bb8def": 1,
+        "246324f928b7404db9f792beabbf0238": 3,
+        "b0248eb51e084227889f2cb84eab79c4": 2,
+        "8850ffcdb9d242a1b431d4a3e2209db1": 2,
+        "ff82cc12f240470497800c3dd09e28ba": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "RESET",
+          1,
+          "PUSHBUTTON",
+          "B1",
+          {
+            "BOM_Manufacturer Part": "K2-1109DF-F4SW-04",
+            "BOM_Supplier Part": "C2909685",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "韩国韩荣",
+            "puuid": "227cf549d3f54c3b9a04bd1a9d4642ee",
+            "uuid": "246324f928b7404db9f792beabbf0238"
+          }
+        ],
+        [
+          "BUTTON",
+          1,
+          "PUSHBUTTON",
+          "B2",
+          {
+            "BOM_Manufacturer Part": "K2-1109DF-F4SW-04",
+            "BOM_Supplier Part": "C2909685",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "韩国韩荣",
+            "puuid": "227cf549d3f54c3b9a04bd1a9d4642ee",
+            "uuid": "246324f928b7404db9f792beabbf0238"
+          }
+        ],
+        [
+          "nSMD020-30V",
+          1,
+          "F1206",
+          "F1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "nSMD020-30V",
+            "BOM_Manufacturer": "TECHFUSE",
+            "BOM_Supplier Part": "C69680",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "c74a5ddd0add4500b745ecf0d59ab737",
+            "uuid": "01948b3ee9187dee9a33558c59be3081"
+          }
+        ],
+        [
+          "LED-TH-5mm_G",
+          1,
+          "LED-TH_BD5.0_RED",
+          "LED1",
+          {
+            "BOM_Manufacturer": "EVERLIGHT(台湾亿光)",
+            "BOM_Manufacturer Part": "333-2SURD/S530-A3",
+            "BOM_Supplier Part": "C87271",
+            "BOM_Supplier": "LCSC",
+            "puuid": "ce0ed154d45b41508e0debca8473ba07",
+            "uuid": "8850ffcdb9d242a1b431d4a3e2209db1"
+          }
+        ],
+        [
+          "LED-TH-5mm_R",
+          1,
+          "LED-TH_BD5.0_RED",
+          "LED2",
+          {
+            "BOM_Manufacturer": "EVERLIGHT(台湾亿光)",
+            "BOM_Manufacturer Part": "333-2SURD/S530-A3",
+            "BOM_Supplier Part": "C87271",
+            "BOM_Supplier": "LCSC",
+            "puuid": "ce0ed154d45b41508e0debca8473ba07",
+            "uuid": "8850ffcdb9d242a1b431d4a3e2209db1"
+          }
+        ],
+        [
+          "NO/NC Momentary Push Button with Indicator Lamp",
+          1,
+          "",
+          "PB1",
+          {
+            "BOM_Manufacturer": "Allied Electronics",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "",
+            "uuid": "55908a346d8c4f76a149aa43c4205d4b"
+          }
+        ],
+        [
+          "IRLZ24NPBF",
+          1,
+          "TO-220-3_L10.0-W4.5-P2.54-T",
+          "Q3",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "IR",
+            "BOM_Manufacturer Part": "IRLZ24NPBF",
+            "BOM_Supplier Part": "C11733",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "fb8b10620b5a459d9b03fd14987346f4",
+            "uuid": "9d3aca5f59eb4f1a90d63602a388b1f3"
+          }
+        ],
+        [
+          "2N2222A",
+          2,
+          "TO-92-3_L4.8-W3.7-P2.54-R",
+          "Q4,Q5",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C358533",
+            "BOM_Manufacturer": "Foshan Blue Rocket Elec",
+            "BOM_Manufacturer Part": "2N2222A",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "d759540c89844d9986051022192fcef6",
+            "uuid": "4160acdcbf3c44b7857840e3de817f0d"
+          }
+        ],
+        [
+          "330",
+          2,
+          "R0603",
+          "R1,R2",
+          {
+            "BOM_Supplier Part": "C713986",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "MF1/4W-330Ω±1%T52",
+            "BOM_Manufacturer": "Huaxing Mechanical-Elec.",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "330",
+          1,
+          "R0603",
+          "R9",
+          {
+            "BOM_Supplier Part": "C119314",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "-",
+            "BOM_Manufacturer": "Chian Chia Elec",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "2K2",
+          1,
+          "R0603",
+          "R10",
+          {
+            "BOM_Supplier Part": "C714002",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "MF1/4W-2.2KΩ±1%T52",
+            "BOM_Manufacturer": "Huaxing Mechanical-Elec.",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "22K",
+          1,
+          "R0603",
+          "R12",
+          {
+            "BOM_Supplier Part": "C714023",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "MF1/4W-24KΩ±1%T52",
+            "BOM_Manufacturer": "Huaxing Mechanical-Elec.",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "47K",
+          1,
+          "R0603",
+          "R13",
+          {
+            "BOM_Supplier Part": "C714023",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "MF1/4W-24KΩ±1%T52",
+            "BOM_Manufacturer": "Huaxing Mechanical-Elec.",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "1K",
+          2,
+          "R0603",
+          "R14,R16",
+          {
+            "BOM_Supplier Part": "C119314",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "-",
+            "BOM_Manufacturer": "Chian Chia Elec",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "6K8",
+          2,
+          "R0603",
+          "R15,R17",
+          {
+            "BOM_Supplier Part": "C119314",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "-",
+            "BOM_Manufacturer": "Chian Chia Elec",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "A6D-4100",
+          1,
+          "SW-TH_8P-L12.2-W6.6-P2.54-LS7.62-BL",
+          "SW1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C3313543",
+            "BOM_Manufacturer": "OMRON(欧姆龙)",
+            "BOM_Manufacturer Part": "A6D-4100",
+            "puuid": "f899c6bb0d104c5d91d9d7b12baedd55",
+            "uuid": "ff07c0a181c247e99f56a71e99bb8def"
+          }
+        ],
+        [
+          "ATTINY84A-PU",
+          1,
+          "DIP-14_L19.2-W6.6-P2.54-LS10.9-BL",
+          "U1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "MICROCHIP",
+            "BOM_Manufacturer Part": "ATTINY84A-PU",
+            "BOM_Supplier Part": "C145560",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "b33782c06f59456891d65206827fb3a9",
+            "uuid": "ff6d760748e040609dd3fb9323f8683a"
+          }
+        ],
+        [
+          "JP_ICSP",
+          1,
+          "JP_ICSP",
+          "U2",
+          {
+            "BOM_Manufacturer": "JILN",
+            "BOM_Manufacturer Part": "321006SG0ABK00A01",
+            "BOM_Supplier Part": "C601936",
+            "BOM_Supplier": "LCSC",
+            "puuid": "30a08dc1ea4f4e31a00b8d4250c52de1",
+            "uuid": "a5bd099ef60a473ab126430ded79483e"
+          }
+        ],
+        [
+          "Sounder 92dB TH Intermittent tone",
+          1,
+          "",
+          "U3",
+          {
+            "BOM_Manufacturer": "Sonitron",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier": "RS-Online",
+            "BOM_Supplier Part": "172-7560",
+            "puuid": "",
+            "uuid": "3c5f792953bb4f45b0f3daad5ddb2871"
+          }
+        ],
+        [
+          "EL817(B)",
+          3,
+          "DIP-4_L6.5-W4.6-P2.54-LS7.6-BL",
+          "U5,U9,U10",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C4749156",
+            "BOM_Manufacturer": "EVERLIGHT(台湾亿光)",
+            "BOM_Manufacturer Part": "EL817(B)",
+            "puuid": "0d68acd2b0244dbca203b10e4872a345",
+            "uuid": "20c427157b284ce7a68d2f9f779a09d7"
+          }
+        ],
+        [
+          "JL308-25409G01",
+          2,
+          "CONN-TH_9P-P2.54_JILN_JL308-25409G01",
+          "U6,U7",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C99418",
+            "BOM_Manufacturer": "Dongguan Guangzhu Industrial",
+            "BOM_Manufacturer Part": "-",
+            "puuid": "5b99b54987a74649ac777e805a75ad63",
+            "uuid": "e0a1d41df89b44dc8438bde96157b2e5"
+          }
+        ],
+        [
+          "LM2596 DC-DC",
+          1,
+          "LM2596",
+          "U8",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "66b3637f17f34d56b56fb420c7417291",
+            "uuid": "a442f9ef9d3d4035be128e237f2cb55b"
+          }
+        ],
+        [
+          "BUTTON",
+          1,
+          "PUSHBUTTON",
+          "B4",
+          {
+            "BOM_Manufacturer Part": "K2-1109DF-F4SW-04",
+            "BOM_Supplier Part": "C2909685",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "韩国韩荣",
+            "puuid": "227cf549d3f54c3b9a04bd1a9d4642ee",
+            "uuid": "246324f928b7404db9f792beabbf0238"
+          }
+        ],
+        [
+          "RESET",
+          1,
+          "PUSHBUTTON",
+          "B5",
+          {
+            "BOM_Manufacturer Part": "K2-1109DF-F4SW-04",
+            "BOM_Supplier Part": "C2909685",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "韩国韩荣",
+            "puuid": "227cf549d3f54c3b9a04bd1a9d4642ee",
+            "uuid": "246324f928b7404db9f792beabbf0238"
+          }
+        ],
+        [
+          "GAS",
+          1,
+          "PUSHBUTTON",
+          "B6",
+          {
+            "BOM_Manufacturer Part": "K2-1109DF-F4SW-04",
+            "BOM_Supplier Part": "C2909685",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "韩国韩荣",
+            "puuid": "227cf549d3f54c3b9a04bd1a9d4642ee",
+            "uuid": "246324f928b7404db9f792beabbf0238"
+          }
+        ],
+        [
+          "LED-TH-5mm_G",
+          1,
+          "LED-TH_BD5.0_RED",
+          "LED3",
+          {
+            "BOM_Manufacturer": "EVERLIGHT(台湾亿光)",
+            "BOM_Manufacturer Part": "333-2SURD/S530-A3",
+            "BOM_Supplier Part": "C87271",
+            "BOM_Supplier": "LCSC",
+            "puuid": "ce0ed154d45b41508e0debca8473ba07",
+            "uuid": "8850ffcdb9d242a1b431d4a3e2209db1"
+          }
+        ],
+        [
+          "LED-TH-5mm_R",
+          1,
+          "LED-TH_BD5.0_RED",
+          "LED4",
+          {
+            "BOM_Manufacturer": "EVERLIGHT(台湾亿光)",
+            "BOM_Manufacturer Part": "333-2SURD/S530-A3",
+            "BOM_Supplier Part": "C87271",
+            "BOM_Supplier": "LCSC",
+            "puuid": "ce0ed154d45b41508e0debca8473ba07",
+            "uuid": "8850ffcdb9d242a1b431d4a3e2209db1"
+          }
+        ],
+        [
+          "330",
+          2,
+          "R0603",
+          "R3,R4",
+          {
+            "BOM_Supplier Part": "C713986",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "MF1/4W-330Ω±1%T52",
+            "BOM_Manufacturer": "Huaxing Mechanical-Elec.",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "A6D-4100",
+          1,
+          "SW-TH_8P-L12.2-W6.6-P2.54-LS7.62-BL",
+          "SW2",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C3313543",
+            "BOM_Manufacturer": "OMRON(欧姆龙)",
+            "BOM_Manufacturer Part": "A6D-4100",
+            "puuid": "f899c6bb0d104c5d91d9d7b12baedd55",
+            "uuid": "ff07c0a181c247e99f56a71e99bb8def"
+          }
+        ],
+        [
+          "Header1x11_2.54",
+          1,
+          "HEADER1X11_2.54",
+          "U4",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "ebf9f639a969400ab8be615819f612c2",
+            "uuid": "ff82cc12f240470497800c3dd09e28ba"
+          }
+        ],
+        [
+          "ATTINY84A-PU",
+          1,
+          "DIP-14_L19.2-W6.6-P2.54-LS10.9-BL",
+          "U11",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "MICROCHIP",
+            "BOM_Manufacturer Part": "ATTINY84A-PU",
+            "BOM_Supplier Part": "C145560",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "b33782c06f59456891d65206827fb3a9",
+            "uuid": "ff6d760748e040609dd3fb9323f8683a"
+          }
+        ],
+        [
+          "Header1x11_2.54",
+          1,
+          "HEADER1X11_2.54",
+          "U12",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "ebf9f639a969400ab8be615819f612c2",
+            "uuid": "ff82cc12f240470497800c3dd09e28ba"
+          }
+        ],
+        [
+          "JP_ICSP",
+          1,
+          "JP_ICSP",
+          "U13",
+          {
+            "BOM_Manufacturer": "JILN",
+            "BOM_Manufacturer Part": "321006SG0ABK00A01",
+            "BOM_Supplier Part": "C601936",
+            "BOM_Supplier": "LCSC",
+            "puuid": "30a08dc1ea4f4e31a00b8d4250c52de1",
+            "uuid": "a5bd099ef60a473ab126430ded79483e"
+          }
+        ],
+        [
+          "nSMD020-30V",
+          1,
+          "F1206",
+          "F2",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "nSMD020-30V",
+            "BOM_Manufacturer": "TECHFUSE",
+            "BOM_Supplier Part": "C69680",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "c74a5ddd0add4500b745ecf0d59ab737",
+            "uuid": "01948b3ee9187dee9a33558c59be3081"
+          }
+        ],
+        [
+          "NO/NC Momentary Push Button with Indicator Lamp",
+          1,
+          "",
+          "PB2",
+          {
+            "BOM_Manufacturer": "Allied Electronics",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "",
+            "uuid": "55908a346d8c4f76a149aa43c4205d4b"
+          }
+        ],
+        [
+          "2N2222A",
+          2,
+          "TO-92-3_L4.8-W3.7-P2.54-R",
+          "Q1,Q2",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C358533",
+            "BOM_Manufacturer": "Foshan Blue Rocket Elec",
+            "BOM_Manufacturer Part": "2N2222A",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "d759540c89844d9986051022192fcef6",
+            "uuid": "4160acdcbf3c44b7857840e3de817f0d"
+          }
+        ],
+        [
+          "IRLZ24NPBF",
+          1,
+          "TO-220-3_L10.0-W4.5-P2.54-T",
+          "Q6",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "IR",
+            "BOM_Manufacturer Part": "IRLZ24NPBF",
+            "BOM_Supplier Part": "C11733",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "fb8b10620b5a459d9b03fd14987346f4",
+            "uuid": "9d3aca5f59eb4f1a90d63602a388b1f3"
+          }
+        ],
+        [
+          "6K8",
+          2,
+          "R0603",
+          "R5,R8",
+          {
+            "BOM_Supplier Part": "C119314",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "-",
+            "BOM_Manufacturer": "Chian Chia Elec",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "1K",
+          2,
+          "R0603",
+          "R6,R7",
+          {
+            "BOM_Supplier Part": "C119314",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "-",
+            "BOM_Manufacturer": "Chian Chia Elec",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "47K",
+          1,
+          "R0603",
+          "R11",
+          {
+            "BOM_Supplier Part": "C714023",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "MF1/4W-24KΩ±1%T52",
+            "BOM_Manufacturer": "Huaxing Mechanical-Elec.",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "22K",
+          1,
+          "R0603",
+          "R18",
+          {
+            "BOM_Supplier Part": "C714023",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "MF1/4W-24KΩ±1%T52",
+            "BOM_Manufacturer": "Huaxing Mechanical-Elec.",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "2K2",
+          1,
+          "R0603",
+          "R19",
+          {
+            "BOM_Supplier Part": "C714002",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "MF1/4W-2.2KΩ±1%T52",
+            "BOM_Manufacturer": "Huaxing Mechanical-Elec.",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "330",
+          1,
+          "R0603",
+          "R20",
+          {
+            "BOM_Supplier Part": "C119314",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "-",
+            "BOM_Manufacturer": "Chian Chia Elec",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "Sounder 92dB TH Intermittent tone",
+          1,
+          "",
+          "U14",
+          {
+            "BOM_Manufacturer": "Sonitron",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier": "RS-Online",
+            "BOM_Supplier Part": "172-7560",
+            "puuid": "",
+            "uuid": "3c5f792953bb4f45b0f3daad5ddb2871"
+          }
+        ],
+        [
+          "EL817(B)",
+          3,
+          "DIP-4_L6.5-W4.6-P2.54-LS7.6-BL",
+          "U15,U16,U20",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C4749156",
+            "BOM_Manufacturer": "EVERLIGHT(台湾亿光)",
+            "BOM_Manufacturer Part": "EL817(B)",
+            "puuid": "0d68acd2b0244dbca203b10e4872a345",
+            "uuid": "20c427157b284ce7a68d2f9f779a09d7"
+          }
+        ],
+        [
+          "LM2596 DC-DC",
+          1,
+          "LM2596",
+          "U17",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "66b3637f17f34d56b56fb420c7417291",
+            "uuid": "a442f9ef9d3d4035be128e237f2cb55b"
+          }
+        ],
+        [
+          "JL308-25409G01",
+          2,
+          "CONN-TH_9P-P2.54_JILN_JL308-25409G01",
+          "U18,U19",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C99418",
+            "BOM_Manufacturer": "Dongguan Guangzhu Industrial",
+            "BOM_Manufacturer Part": "-",
+            "puuid": "5b99b54987a74649ac777e805a75ad63",
+            "uuid": "e0a1d41df89b44dc8438bde96157b2e5"
+          }
+        ],
+        [
+          "POWER HEADER 1x3",
+          1,
+          "PINHEADER1X3",
+          "U21",
+          {
+            "BOM_Manufacturer Part": "Pin_Header_2",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "ec6ed47e17244981acc84f4ad37547c6",
+            "uuid": "51ed616f0c0d49d4a6145056b1a99734"
+          }
+        ],
+        [
+          "SIGNAL HEADER1X5",
+          1,
+          "PINHEADER1X5N",
+          "U22",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "undefined",
+            "BOM_Supplier": "",
+            "puuid": "f8ad1211a7b145a9b6673b81871980fb",
+            "uuid": "0e47c493c45f453aa736afadf71c886e"
+          }
+        ]
+      ],
+      "updateTime": 1667759888,
+      "createTime": 1667759888,
+      "histories": [],
+      "created_at": "2022-11-06 18:38:08",
+      "updated_at": "2022-11-06 18:38:08"
+    },
+    {
+      "uuid": "3608db2dd04eaa887a0178f3eab57270",
+      "title": "Sheet_3",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "ff6d760748e040609dd3fb9323f8683a": 1,
+        "ff82cc12f240470497800c3dd09e28ba": 1,
+        "a5bd099ef60a473ab126430ded79483e": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "RESET",
+          1,
+          "PUSHBUTTON",
+          "B1",
+          {
+            "BOM_Manufacturer Part": "K2-1109DF-F4SW-04",
+            "BOM_Supplier Part": "C2909685",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "韩国韩荣",
+            "puuid": "227cf549d3f54c3b9a04bd1a9d4642ee",
+            "uuid": "246324f928b7404db9f792beabbf0238"
+          }
+        ],
+        [
+          "BUTTON",
+          1,
+          "PUSHBUTTON",
+          "B2",
+          {
+            "BOM_Manufacturer Part": "K2-1109DF-F4SW-04",
+            "BOM_Supplier Part": "C2909685",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "韩国韩荣",
+            "puuid": "227cf549d3f54c3b9a04bd1a9d4642ee",
+            "uuid": "246324f928b7404db9f792beabbf0238"
+          }
+        ],
+        [
+          "nSMD020-30V",
+          1,
+          "F1206",
+          "F1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "nSMD020-30V",
+            "BOM_Manufacturer": "TECHFUSE",
+            "BOM_Supplier Part": "C69680",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "c74a5ddd0add4500b745ecf0d59ab737",
+            "uuid": "01948b3ee9187dee9a33558c59be3081"
+          }
+        ],
+        [
+          "LED-TH-5mm_G",
+          1,
+          "LED-TH_BD5.0_RED",
+          "LED1",
+          {
+            "BOM_Manufacturer": "EVERLIGHT(台湾亿光)",
+            "BOM_Manufacturer Part": "333-2SURD/S530-A3",
+            "BOM_Supplier Part": "C87271",
+            "BOM_Supplier": "LCSC",
+            "puuid": "ce0ed154d45b41508e0debca8473ba07",
+            "uuid": "8850ffcdb9d242a1b431d4a3e2209db1"
+          }
+        ],
+        [
+          "LED-TH-5mm_R",
+          1,
+          "LED-TH_BD5.0_RED",
+          "LED2",
+          {
+            "BOM_Manufacturer": "EVERLIGHT(台湾亿光)",
+            "BOM_Manufacturer Part": "333-2SURD/S530-A3",
+            "BOM_Supplier Part": "C87271",
+            "BOM_Supplier": "LCSC",
+            "puuid": "ce0ed154d45b41508e0debca8473ba07",
+            "uuid": "8850ffcdb9d242a1b431d4a3e2209db1"
+          }
+        ],
+        [
+          "NO/NC Momentary Push Button with Indicator Lamp",
+          1,
+          "",
+          "PB1",
+          {
+            "BOM_Manufacturer": "Allied Electronics",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "",
+            "uuid": "55908a346d8c4f76a149aa43c4205d4b"
+          }
+        ],
+        [
+          "IRLZ24NPBF",
+          1,
+          "TO-220-3_L10.0-W4.5-P2.54-T",
+          "Q3",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "IR",
+            "BOM_Manufacturer Part": "IRLZ24NPBF",
+            "BOM_Supplier Part": "C11733",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "fb8b10620b5a459d9b03fd14987346f4",
+            "uuid": "9d3aca5f59eb4f1a90d63602a388b1f3"
+          }
+        ],
+        [
+          "2N2222A",
+          2,
+          "TO-92-3_L4.8-W3.7-P2.54-R",
+          "Q4,Q5",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C358533",
+            "BOM_Manufacturer": "Foshan Blue Rocket Elec",
+            "BOM_Manufacturer Part": "2N2222A",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "d759540c89844d9986051022192fcef6",
+            "uuid": "4160acdcbf3c44b7857840e3de817f0d"
+          }
+        ],
+        [
+          "330",
+          2,
+          "R0603",
+          "R1,R2",
+          {
+            "BOM_Supplier Part": "C713986",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "MF1/4W-330Ω±1%T52",
+            "BOM_Manufacturer": "Huaxing Mechanical-Elec.",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "330",
+          1,
+          "R0603",
+          "R9",
+          {
+            "BOM_Supplier Part": "C119314",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "-",
+            "BOM_Manufacturer": "Chian Chia Elec",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "2K2",
+          1,
+          "R0603",
+          "R10",
+          {
+            "BOM_Supplier Part": "C714002",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "MF1/4W-2.2KΩ±1%T52",
+            "BOM_Manufacturer": "Huaxing Mechanical-Elec.",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "22K",
+          1,
+          "R0603",
+          "R12",
+          {
+            "BOM_Supplier Part": "C714023",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "MF1/4W-24KΩ±1%T52",
+            "BOM_Manufacturer": "Huaxing Mechanical-Elec.",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "47K",
+          1,
+          "R0603",
+          "R13",
+          {
+            "BOM_Supplier Part": "C714023",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "MF1/4W-24KΩ±1%T52",
+            "BOM_Manufacturer": "Huaxing Mechanical-Elec.",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "1K",
+          2,
+          "R0603",
+          "R14,R16",
+          {
+            "BOM_Supplier Part": "C119314",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "-",
+            "BOM_Manufacturer": "Chian Chia Elec",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "6K8",
+          2,
+          "R0603",
+          "R15,R17",
+          {
+            "BOM_Supplier Part": "C119314",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "-",
+            "BOM_Manufacturer": "Chian Chia Elec",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "A6D-4100",
+          1,
+          "SW-TH_8P-L12.2-W6.6-P2.54-LS7.62-BL",
+          "SW1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C3313543",
+            "BOM_Manufacturer": "OMRON(欧姆龙)",
+            "BOM_Manufacturer Part": "A6D-4100",
+            "puuid": "f899c6bb0d104c5d91d9d7b12baedd55",
+            "uuid": "ff07c0a181c247e99f56a71e99bb8def"
+          }
+        ],
+        [
+          "ATTINY84A-PU",
+          1,
+          "DIP-14_L19.2-W6.6-P2.54-LS10.9-BL",
+          "U1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "MICROCHIP",
+            "BOM_Manufacturer Part": "ATTINY84A-PU",
+            "BOM_Supplier Part": "C145560",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "b33782c06f59456891d65206827fb3a9",
+            "uuid": "ff6d760748e040609dd3fb9323f8683a"
+          }
+        ],
+        [
+          "JP_ICSP",
+          1,
+          "JP_ICSP",
+          "U2",
+          {
+            "BOM_Manufacturer": "JILN",
+            "BOM_Manufacturer Part": "321006SG0ABK00A01",
+            "BOM_Supplier Part": "C601936",
+            "BOM_Supplier": "LCSC",
+            "puuid": "30a08dc1ea4f4e31a00b8d4250c52de1",
+            "uuid": "a5bd099ef60a473ab126430ded79483e"
+          }
+        ],
+        [
+          "Sounder 92dB TH Intermittent tone",
+          1,
+          "",
+          "U3",
+          {
+            "BOM_Manufacturer": "Sonitron",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier": "RS-Online",
+            "BOM_Supplier Part": "172-7560",
+            "puuid": "",
+            "uuid": "3c5f792953bb4f45b0f3daad5ddb2871"
+          }
+        ],
+        [
+          "EL817(B)",
+          3,
+          "DIP-4_L6.5-W4.6-P2.54-LS7.6-BL",
+          "U5,U9,U10",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C4749156",
+            "BOM_Manufacturer": "EVERLIGHT(台湾亿光)",
+            "BOM_Manufacturer Part": "EL817(B)",
+            "puuid": "0d68acd2b0244dbca203b10e4872a345",
+            "uuid": "20c427157b284ce7a68d2f9f779a09d7"
+          }
+        ],
+        [
+          "JL308-25409G01",
+          2,
+          "CONN-TH_9P-P2.54_JILN_JL308-25409G01",
+          "U6,U7",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C99418",
+            "BOM_Manufacturer": "Dongguan Guangzhu Industrial",
+            "BOM_Manufacturer Part": "-",
+            "puuid": "5b99b54987a74649ac777e805a75ad63",
+            "uuid": "e0a1d41df89b44dc8438bde96157b2e5"
+          }
+        ],
+        [
+          "LM2596 DC-DC",
+          1,
+          "LM2596",
+          "U8",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "66b3637f17f34d56b56fb420c7417291",
+            "uuid": "a442f9ef9d3d4035be128e237f2cb55b"
+          }
+        ],
+        [
+          "BUTTON",
+          1,
+          "PUSHBUTTON",
+          "B4",
+          {
+            "BOM_Manufacturer Part": "K2-1109DF-F4SW-04",
+            "BOM_Supplier Part": "C2909685",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "韩国韩荣",
+            "puuid": "227cf549d3f54c3b9a04bd1a9d4642ee",
+            "uuid": "246324f928b7404db9f792beabbf0238"
+          }
+        ],
+        [
+          "RESET",
+          1,
+          "PUSHBUTTON",
+          "B5",
+          {
+            "BOM_Manufacturer Part": "K2-1109DF-F4SW-04",
+            "BOM_Supplier Part": "C2909685",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "韩国韩荣",
+            "puuid": "227cf549d3f54c3b9a04bd1a9d4642ee",
+            "uuid": "246324f928b7404db9f792beabbf0238"
+          }
+        ],
+        [
+          "GAS",
+          1,
+          "PUSHBUTTON",
+          "B6",
+          {
+            "BOM_Manufacturer Part": "K2-1109DF-F4SW-04",
+            "BOM_Supplier Part": "C2909685",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "韩国韩荣",
+            "puuid": "227cf549d3f54c3b9a04bd1a9d4642ee",
+            "uuid": "246324f928b7404db9f792beabbf0238"
+          }
+        ],
+        [
+          "LED-TH-5mm_G",
+          1,
+          "LED-TH_BD5.0_RED",
+          "LED3",
+          {
+            "BOM_Manufacturer": "EVERLIGHT(台湾亿光)",
+            "BOM_Manufacturer Part": "333-2SURD/S530-A3",
+            "BOM_Supplier Part": "C87271",
+            "BOM_Supplier": "LCSC",
+            "puuid": "ce0ed154d45b41508e0debca8473ba07",
+            "uuid": "8850ffcdb9d242a1b431d4a3e2209db1"
+          }
+        ],
+        [
+          "LED-TH-5mm_R",
+          1,
+          "LED-TH_BD5.0_RED",
+          "LED4",
+          {
+            "BOM_Manufacturer": "EVERLIGHT(台湾亿光)",
+            "BOM_Manufacturer Part": "333-2SURD/S530-A3",
+            "BOM_Supplier Part": "C87271",
+            "BOM_Supplier": "LCSC",
+            "puuid": "ce0ed154d45b41508e0debca8473ba07",
+            "uuid": "8850ffcdb9d242a1b431d4a3e2209db1"
+          }
+        ],
+        [
+          "330",
+          2,
+          "R0603",
+          "R3,R4",
+          {
+            "BOM_Supplier Part": "C713986",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "MF1/4W-330Ω±1%T52",
+            "BOM_Manufacturer": "Huaxing Mechanical-Elec.",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "A6D-4100",
+          1,
+          "SW-TH_8P-L12.2-W6.6-P2.54-LS7.62-BL",
+          "SW2",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C3313543",
+            "BOM_Manufacturer": "OMRON(欧姆龙)",
+            "BOM_Manufacturer Part": "A6D-4100",
+            "puuid": "f899c6bb0d104c5d91d9d7b12baedd55",
+            "uuid": "ff07c0a181c247e99f56a71e99bb8def"
+          }
+        ],
+        [
+          "Header1x11_2.54",
+          1,
+          "HEADER1X11_2.54",
+          "U4",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "ebf9f639a969400ab8be615819f612c2",
+            "uuid": "ff82cc12f240470497800c3dd09e28ba"
+          }
+        ],
+        [
+          "ATTINY84A-PU",
+          1,
+          "DIP-14_L19.2-W6.6-P2.54-LS10.9-BL",
+          "U11",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "MICROCHIP",
+            "BOM_Manufacturer Part": "ATTINY84A-PU",
+            "BOM_Supplier Part": "C145560",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "b33782c06f59456891d65206827fb3a9",
+            "uuid": "ff6d760748e040609dd3fb9323f8683a"
+          }
+        ],
+        [
+          "Header1x11_2.54",
+          1,
+          "HEADER1X11_2.54",
+          "U12",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "ebf9f639a969400ab8be615819f612c2",
+            "uuid": "ff82cc12f240470497800c3dd09e28ba"
+          }
+        ],
+        [
+          "JP_ICSP",
+          1,
+          "JP_ICSP",
+          "U13",
+          {
+            "BOM_Manufacturer": "JILN",
+            "BOM_Manufacturer Part": "321006SG0ABK00A01",
+            "BOM_Supplier Part": "C601936",
+            "BOM_Supplier": "LCSC",
+            "puuid": "30a08dc1ea4f4e31a00b8d4250c52de1",
+            "uuid": "a5bd099ef60a473ab126430ded79483e"
+          }
+        ],
+        [
+          "nSMD020-30V",
+          1,
+          "F1206",
+          "F2",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "nSMD020-30V",
+            "BOM_Manufacturer": "TECHFUSE",
+            "BOM_Supplier Part": "C69680",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "c74a5ddd0add4500b745ecf0d59ab737",
+            "uuid": "01948b3ee9187dee9a33558c59be3081"
+          }
+        ],
+        [
+          "NO/NC Momentary Push Button with Indicator Lamp",
+          1,
+          "",
+          "PB2",
+          {
+            "BOM_Manufacturer": "Allied Electronics",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "",
+            "uuid": "55908a346d8c4f76a149aa43c4205d4b"
+          }
+        ],
+        [
+          "2N2222A",
+          2,
+          "TO-92-3_L4.8-W3.7-P2.54-R",
+          "Q1,Q2",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C358533",
+            "BOM_Manufacturer": "Foshan Blue Rocket Elec",
+            "BOM_Manufacturer Part": "2N2222A",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "d759540c89844d9986051022192fcef6",
+            "uuid": "4160acdcbf3c44b7857840e3de817f0d"
+          }
+        ],
+        [
+          "IRLZ24NPBF",
+          1,
+          "TO-220-3_L10.0-W4.5-P2.54-T",
+          "Q6",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "IR",
+            "BOM_Manufacturer Part": "IRLZ24NPBF",
+            "BOM_Supplier Part": "C11733",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "fb8b10620b5a459d9b03fd14987346f4",
+            "uuid": "9d3aca5f59eb4f1a90d63602a388b1f3"
+          }
+        ],
+        [
+          "6K8",
+          2,
+          "R0603",
+          "R5,R8",
+          {
+            "BOM_Supplier Part": "C119314",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "-",
+            "BOM_Manufacturer": "Chian Chia Elec",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "1K",
+          2,
+          "R0603",
+          "R6,R7",
+          {
+            "BOM_Supplier Part": "C119314",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "-",
+            "BOM_Manufacturer": "Chian Chia Elec",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "47K",
+          1,
+          "R0603",
+          "R11",
+          {
+            "BOM_Supplier Part": "C714023",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "MF1/4W-24KΩ±1%T52",
+            "BOM_Manufacturer": "Huaxing Mechanical-Elec.",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "22K",
+          1,
+          "R0603",
+          "R18",
+          {
+            "BOM_Supplier Part": "C714023",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "MF1/4W-24KΩ±1%T52",
+            "BOM_Manufacturer": "Huaxing Mechanical-Elec.",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "2K2",
+          1,
+          "R0603",
+          "R19",
+          {
+            "BOM_Supplier Part": "C714002",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "MF1/4W-2.2KΩ±1%T52",
+            "BOM_Manufacturer": "Huaxing Mechanical-Elec.",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "330",
+          1,
+          "R0603",
+          "R20",
+          {
+            "BOM_Supplier Part": "C119314",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "-",
+            "BOM_Manufacturer": "Chian Chia Elec",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "Sounder 92dB TH Intermittent tone",
+          1,
+          "",
+          "U14",
+          {
+            "BOM_Manufacturer": "Sonitron",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier": "RS-Online",
+            "BOM_Supplier Part": "172-7560",
+            "puuid": "",
+            "uuid": "3c5f792953bb4f45b0f3daad5ddb2871"
+          }
+        ],
+        [
+          "EL817(B)",
+          3,
+          "DIP-4_L6.5-W4.6-P2.54-LS7.6-BL",
+          "U15,U16,U20",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C4749156",
+            "BOM_Manufacturer": "EVERLIGHT(台湾亿光)",
+            "BOM_Manufacturer Part": "EL817(B)",
+            "puuid": "0d68acd2b0244dbca203b10e4872a345",
+            "uuid": "20c427157b284ce7a68d2f9f779a09d7"
+          }
+        ],
+        [
+          "LM2596 DC-DC",
+          1,
+          "LM2596",
+          "U17",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "66b3637f17f34d56b56fb420c7417291",
+            "uuid": "a442f9ef9d3d4035be128e237f2cb55b"
+          }
+        ],
+        [
+          "JL308-25409G01",
+          2,
+          "CONN-TH_9P-P2.54_JILN_JL308-25409G01",
+          "U18,U19",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C99418",
+            "BOM_Manufacturer": "Dongguan Guangzhu Industrial",
+            "BOM_Manufacturer Part": "-",
+            "puuid": "5b99b54987a74649ac777e805a75ad63",
+            "uuid": "e0a1d41df89b44dc8438bde96157b2e5"
+          }
+        ],
+        [
+          "POWER HEADER 1x3",
+          1,
+          "PINHEADER1X3",
+          "U21",
+          {
+            "BOM_Manufacturer Part": "Pin_Header_2",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "ec6ed47e17244981acc84f4ad37547c6",
+            "uuid": "51ed616f0c0d49d4a6145056b1a99734"
+          }
+        ],
+        [
+          "SIGNAL HEADER1X5",
+          1,
+          "PINHEADER1X5N",
+          "U22",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "undefined",
+            "BOM_Supplier": "",
+            "puuid": "f8ad1211a7b145a9b6673b81871980fb",
+            "uuid": "0e47c493c45f453aa736afadf71c886e"
+          }
+        ]
+      ],
+      "updateTime": 1667759888,
+      "createTime": 1667759888,
+      "histories": [],
+      "created_at": "2022-11-06 18:38:08",
+      "updated_at": "2022-11-06 18:38:08"
+    },
+    {
+      "uuid": "27558bc564bc2e690943f18a8610335c",
+      "title": "Sheet_4",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "3c5f792953bb4f45b0f3daad5ddb2871": 1,
+        "55908a346d8c4f76a149aa43c4205d4b": 1,
+        "4160acdcbf3c44b7857840e3de817f0d": 2,
+        "b0248eb51e084227889f2cb84eab79c4": 8,
+        "20c427157b284ce7a68d2f9f779a09d7": 3,
+        "9d3aca5f59eb4f1a90d63602a388b1f3": 1,
+        "01948b3ee9187dee9a33558c59be3081": 1,
+        "a442f9ef9d3d4035be128e237f2cb55b": 1,
+        "e0a1d41df89b44dc8438bde96157b2e5": 2,
+        "51ed616f0c0d49d4a6145056b1a99734": 1,
+        "0e47c493c45f453aa736afadf71c886e": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "BUTTON",
+          1,
+          "PUSHBUTTON",
+          "B4",
+          {
+            "BOM_Manufacturer Part": "K2-1109DF-F4SW-04",
+            "BOM_Supplier Part": "C2909685",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "韩国韩荣",
+            "puuid": "227cf549d3f54c3b9a04bd1a9d4642ee",
+            "uuid": "246324f928b7404db9f792beabbf0238"
+          }
+        ],
+        [
+          "RESET",
+          1,
+          "PUSHBUTTON",
+          "B5",
+          {
+            "BOM_Manufacturer Part": "K2-1109DF-F4SW-04",
+            "BOM_Supplier Part": "C2909685",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "韩国韩荣",
+            "puuid": "227cf549d3f54c3b9a04bd1a9d4642ee",
+            "uuid": "246324f928b7404db9f792beabbf0238"
+          }
+        ],
+        [
+          "GAS",
+          1,
+          "PUSHBUTTON",
+          "B6",
+          {
+            "BOM_Manufacturer Part": "K2-1109DF-F4SW-04",
+            "BOM_Supplier Part": "C2909685",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "韩国韩荣",
+            "puuid": "227cf549d3f54c3b9a04bd1a9d4642ee",
+            "uuid": "246324f928b7404db9f792beabbf0238"
+          }
+        ],
+        [
+          "LED-TH-5mm_G",
+          1,
+          "LED-TH_BD5.0_RED",
+          "LED3",
+          {
+            "BOM_Manufacturer": "EVERLIGHT(台湾亿光)",
+            "BOM_Manufacturer Part": "333-2SURD/S530-A3",
+            "BOM_Supplier Part": "C87271",
+            "BOM_Supplier": "LCSC",
+            "puuid": "ce0ed154d45b41508e0debca8473ba07",
+            "uuid": "8850ffcdb9d242a1b431d4a3e2209db1"
+          }
+        ],
+        [
+          "LED-TH-5mm_R",
+          1,
+          "LED-TH_BD5.0_RED",
+          "LED4",
+          {
+            "BOM_Manufacturer": "EVERLIGHT(台湾亿光)",
+            "BOM_Manufacturer Part": "333-2SURD/S530-A3",
+            "BOM_Supplier Part": "C87271",
+            "BOM_Supplier": "LCSC",
+            "puuid": "ce0ed154d45b41508e0debca8473ba07",
+            "uuid": "8850ffcdb9d242a1b431d4a3e2209db1"
+          }
+        ],
+        [
+          "330",
+          2,
+          "R0603",
+          "R3,R4",
+          {
+            "BOM_Supplier Part": "C713986",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "MF1/4W-330Ω±1%T52",
+            "BOM_Manufacturer": "Huaxing Mechanical-Elec.",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "A6D-4100",
+          1,
+          "SW-TH_8P-L12.2-W6.6-P2.54-LS7.62-BL",
+          "SW2",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C3313543",
+            "BOM_Manufacturer": "OMRON(欧姆龙)",
+            "BOM_Manufacturer Part": "A6D-4100",
+            "puuid": "f899c6bb0d104c5d91d9d7b12baedd55",
+            "uuid": "ff07c0a181c247e99f56a71e99bb8def"
+          }
+        ],
+        [
+          "Header1x11_2.54",
+          1,
+          "HEADER1X11_2.54",
+          "U4",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "ebf9f639a969400ab8be615819f612c2",
+            "uuid": "ff82cc12f240470497800c3dd09e28ba"
+          }
+        ],
+        [
+          "ATTINY84A-PU",
+          1,
+          "DIP-14_L19.2-W6.6-P2.54-LS10.9-BL",
+          "U11",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "MICROCHIP",
+            "BOM_Manufacturer Part": "ATTINY84A-PU",
+            "BOM_Supplier Part": "C145560",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "b33782c06f59456891d65206827fb3a9",
+            "uuid": "ff6d760748e040609dd3fb9323f8683a"
+          }
+        ],
+        [
+          "Header1x11_2.54",
+          1,
+          "HEADER1X11_2.54",
+          "U12",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "ebf9f639a969400ab8be615819f612c2",
+            "uuid": "ff82cc12f240470497800c3dd09e28ba"
+          }
+        ],
+        [
+          "JP_ICSP",
+          1,
+          "JP_ICSP",
+          "U13",
+          {
+            "BOM_Manufacturer": "JILN",
+            "BOM_Manufacturer Part": "321006SG0ABK00A01",
+            "BOM_Supplier Part": "C601936",
+            "BOM_Supplier": "LCSC",
+            "puuid": "30a08dc1ea4f4e31a00b8d4250c52de1",
+            "uuid": "a5bd099ef60a473ab126430ded79483e"
+          }
+        ],
+        [
+          "nSMD020-30V",
+          1,
+          "F1206",
+          "F2",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "nSMD020-30V",
+            "BOM_Manufacturer": "TECHFUSE",
+            "BOM_Supplier Part": "C69680",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "c74a5ddd0add4500b745ecf0d59ab737",
+            "uuid": "01948b3ee9187dee9a33558c59be3081"
+          }
+        ],
+        [
+          "NO/NC Momentary Push Button with Indicator Lamp",
+          1,
+          "",
+          "PB2",
+          {
+            "BOM_Manufacturer": "Allied Electronics",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "",
+            "uuid": "55908a346d8c4f76a149aa43c4205d4b"
+          }
+        ],
+        [
+          "2N2222A",
+          2,
+          "TO-92-3_L4.8-W3.7-P2.54-R",
+          "Q1,Q2",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C358533",
+            "BOM_Manufacturer": "Foshan Blue Rocket Elec",
+            "BOM_Manufacturer Part": "2N2222A",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "d759540c89844d9986051022192fcef6",
+            "uuid": "4160acdcbf3c44b7857840e3de817f0d"
+          }
+        ],
+        [
+          "IRLZ24NPBF",
+          1,
+          "TO-220-3_L10.0-W4.5-P2.54-T",
+          "Q6",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "IR",
+            "BOM_Manufacturer Part": "IRLZ24NPBF",
+            "BOM_Supplier Part": "C11733",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "fb8b10620b5a459d9b03fd14987346f4",
+            "uuid": "9d3aca5f59eb4f1a90d63602a388b1f3"
+          }
+        ],
+        [
+          "6K8",
+          2,
+          "R0603",
+          "R5,R8",
+          {
+            "BOM_Supplier Part": "C119314",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "-",
+            "BOM_Manufacturer": "Chian Chia Elec",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "1K",
+          2,
+          "R0603",
+          "R6,R7",
+          {
+            "BOM_Supplier Part": "C119314",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "-",
+            "BOM_Manufacturer": "Chian Chia Elec",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "47K",
+          1,
+          "R0603",
+          "R11",
+          {
+            "BOM_Supplier Part": "C714023",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "MF1/4W-24KΩ±1%T52",
+            "BOM_Manufacturer": "Huaxing Mechanical-Elec.",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "22K",
+          1,
+          "R0603",
+          "R18",
+          {
+            "BOM_Supplier Part": "C714023",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "MF1/4W-24KΩ±1%T52",
+            "BOM_Manufacturer": "Huaxing Mechanical-Elec.",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "2K2",
+          1,
+          "R0603",
+          "R19",
+          {
+            "BOM_Supplier Part": "C714002",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "MF1/4W-2.2KΩ±1%T52",
+            "BOM_Manufacturer": "Huaxing Mechanical-Elec.",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "330",
+          1,
+          "R0603",
+          "R20",
+          {
+            "BOM_Supplier Part": "C119314",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "-",
+            "BOM_Manufacturer": "Chian Chia Elec",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "Sounder 92dB TH Intermittent tone",
+          1,
+          "",
+          "U14",
+          {
+            "BOM_Manufacturer": "Sonitron",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier": "RS-Online",
+            "BOM_Supplier Part": "172-7560",
+            "puuid": "",
+            "uuid": "3c5f792953bb4f45b0f3daad5ddb2871"
+          }
+        ],
+        [
+          "EL817(B)",
+          3,
+          "DIP-4_L6.5-W4.6-P2.54-LS7.6-BL",
+          "U15,U16,U20",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C4749156",
+            "BOM_Manufacturer": "EVERLIGHT(台湾亿光)",
+            "BOM_Manufacturer Part": "EL817(B)",
+            "puuid": "0d68acd2b0244dbca203b10e4872a345",
+            "uuid": "20c427157b284ce7a68d2f9f779a09d7"
+          }
+        ],
+        [
+          "LM2596 DC-DC",
+          1,
+          "LM2596",
+          "U17",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "66b3637f17f34d56b56fb420c7417291",
+            "uuid": "a442f9ef9d3d4035be128e237f2cb55b"
+          }
+        ],
+        [
+          "JL308-25409G01",
+          2,
+          "CONN-TH_9P-P2.54_JILN_JL308-25409G01",
+          "U18,U19",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C99418",
+            "BOM_Manufacturer": "Dongguan Guangzhu Industrial",
+            "BOM_Manufacturer Part": "-",
+            "puuid": "5b99b54987a74649ac777e805a75ad63",
+            "uuid": "e0a1d41df89b44dc8438bde96157b2e5"
+          }
+        ],
+        [
+          "POWER HEADER 1x3",
+          1,
+          "PINHEADER1X3",
+          "U21",
+          {
+            "BOM_Manufacturer Part": "Pin_Header_2",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "ec6ed47e17244981acc84f4ad37547c6",
+            "uuid": "51ed616f0c0d49d4a6145056b1a99734"
+          }
+        ],
+        [
+          "SIGNAL HEADER1X5",
+          1,
+          "PINHEADER1X5N",
+          "U22",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "undefined",
+            "BOM_Supplier": "",
+            "puuid": "f8ad1211a7b145a9b6673b81871980fb",
+            "uuid": "0e47c493c45f453aa736afadf71c886e"
+          }
+        ]
+      ],
+      "updateTime": 1667941680,
+      "createTime": 1667759888,
+      "histories": [],
+      "created_at": "2022-11-06 18:38:08",
+      "updated_at": "2022-11-08 21:08:00"
+    }
+  ],
+  "sort": [
+    "7845938acd5d15ebf2de9441ff3bafb5",
+    "3608db2dd04eaa887a0178f3eab57270",
+    "27558bc564bc2e690943f18a8610335c"
+  ],
+  "title": "Pressure Sensor2",
+  "foldername": "Pressure Sensor2",
+  "schfilename": "Pressure Sensor2.json",
+  "schfilemtime": 1667941680305
+}

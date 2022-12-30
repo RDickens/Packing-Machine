@@ -71,3 +71,7 @@ Date 4/10/2022
 ---------------
 - Initial release version
 
+
+Date 30/12/2022
+----------------
+- Corrected wiring diagram wire numbers

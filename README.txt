@@ -74,5 +74,9 @@ Date 6/11/2022
 
 Date 24/1/2023
 --------------
-- Added watchdog functionality
+- Added watchdog reboot functionality
 - Added button press to blink indicator once to show user cpu is still working
+
+Date 5/2/2023
+--------------
+- Changed watchdog register to show reason for last reset.

@@ -85,12 +85,20 @@ void setup();
 void loop();
 
 /******************************************************************************
+ * @brief List optional procedures
+ *
+ ******************************************************************************/
+#ifdef WATCHDOG
+void resetreason();
+#endif
+
+/******************************************************************************
  * @brief List of all variables
  *
  ******************************************************************************/
 int SensorValue;
 int CalibrationValue;
-int val = 0;
+bool val;
 int ToleranceArray[] = {0, 20, 40, 60}; // Tolerance steps
 int Tolerance;
 bool LampLevel;
@@ -102,6 +110,7 @@ int delaycount = 0;
 int delaymax = LOW_COUNT; // How many measurements need to be below threshold before triggering alert (removes noise)
 int flashspeed = SPEED;   // Sets lamp and buzzer speed
 bool silenced = false;    // Has the alarm been silenced
+volatile int reset = 0;   // Reason for last reset 0 unset, 1 Power on, 2 Brown out, 3 Reset button, 4 Watchdog
 
 /******************************************************************************
  * @brief Tasks & scheduler
@@ -305,15 +314,23 @@ void calibrate()
     // Pulse sounder and lamp to let operator know sensor is working
     digitalWrite(SOUNDER_PIN, SOUNDER_LEVEL);
     digitalWrite(LAMP_PIN, LAMP_LEVEL);
+    digitalWrite(INDICATOR1_PIN, INDICATOR1_LEVEL);
+    digitalWrite(INDICATOR2_PIN, INDICATOR2_LEVEL);
     delay(flashspeed);
     digitalWrite(SOUNDER_PIN, !SOUNDER_LEVEL);
     digitalWrite(LAMP_PIN, !LAMP_LEVEL);
+    digitalWrite(INDICATOR1_PIN, !INDICATOR1_LEVEL);
+    digitalWrite(INDICATOR2_PIN, !INDICATOR2_LEVEL);
     delay(flashspeed);
     digitalWrite(SOUNDER_PIN, SOUNDER_LEVEL);
     digitalWrite(LAMP_PIN, LAMP_LEVEL);
+    digitalWrite(INDICATOR1_PIN, INDICATOR1_LEVEL);
+    digitalWrite(INDICATOR2_PIN, INDICATOR2_LEVEL);
     delay(flashspeed);
     digitalWrite(SOUNDER_PIN, !SOUNDER_LEVEL);
     digitalWrite(LAMP_PIN, !LAMP_LEVEL);
+    digitalWrite(INDICATOR1_PIN, !INDICATOR1_LEVEL);
+    digitalWrite(INDICATOR2_PIN, !INDICATOR2_LEVEL);
 
     writeeeprom(); // Save reading to EEPROM
 
@@ -323,7 +340,7 @@ void calibrate()
         val = digitalRead(BUTTON_PIN);
 
 #ifdef WATCHDOG
-        wdt_reset();
+        wdt_reset(); // Ensure watchdog doesn't trigger during calibration
 #endif
 
     } while (val == BUTTON_LEVEL);
@@ -342,19 +359,47 @@ void clearindicators()
 }
 
 /******************************************************************************
+ * @brief Flash lamp for the reason for last reset
+ *
+ * 1 Power on, 2 Brown out, 3 Reset button, 4 Watchdog
+ ******************************************************************************/
+#ifdef WATCHDOG
+void resetreason()
+{
+
+    if (MCUSR & (_BV(PORF)))
+    {
+        // Power On
+        reset = 1;
+    }
+    else if (MCUSR & (_BV(BORF)))
+    {
+        // Brownout
+        reset = 2;
+    }
+    else if (MCUSR & _BV(EXTRF))
+    {
+        // Reset button or otherwise some software reset
+        reset = 3;
+    }
+
+    else if (MCUSR & _BV(WDRF))
+    {
+        // Watchdog Reset
+        reset = 4;
+    }
+
+    MCUSR = 0x00;
+    wdt_disable();
+}
+#endif
+
+/******************************************************************************
  * @brief Main setup
  *
  ******************************************************************************/
 void setup()
 {
-#ifdef WATCHDOG
-    MCUSR = 0x00;
-    wdt_disable();
-    wdt_enable(WATCHDOG_TIMEOUT);
-#endif
-
-    delay(1000);
-
     // Setup pins
     pinMode(SENSOR_PIN, INPUT);
     pinMode(BUTTON_PIN, INPUT_PULLUP);
@@ -369,20 +414,55 @@ void setup()
     pinMode(INDICATOR1_PIN, OUTPUT);
     pinMode(INDICATOR2_PIN, OUTPUT);
 
+// if watchdog is enabled display reason for last reset otherwise just say its a normal reset
+#ifdef WATCHDOG
+
+    resetreason();
+
+    // Blink reset reason. 1 Power on, 2 Brown out, 3 Reset button, 4 Watchdog
+    for (int loopcount = 0; loopcount < reset; loopcount++)
+    {
+        digitalWrite(LAMP_PIN, LAMP_LEVEL);
+        digitalWrite(INDICATOR1_PIN, INDICATOR1_LEVEL);
+        digitalWrite(INDICATOR2_PIN, INDICATOR2_LEVEL);
+        delay(500);
+        digitalWrite(LAMP_PIN, !LAMP_LEVEL);
+        digitalWrite(INDICATOR1_PIN, !INDICATOR1_LEVEL);
+        digitalWrite(INDICATOR2_PIN, !INDICATOR2_LEVEL);
+        delay(500);
+    }
+
+    wdt_enable(WATCHDOG_TIMEOUT);
+    wdt_reset();
+    // delay(2500);
+#else
+
+    // Ensure watchdog is turned off
+    MCUSR = 0x00;
+    wdt_disable();
+
+    reset = 1;
+#endif
+
     attachPCINT(digitalPinToPCINT(PULSE_PIN), interruptroutine, CHANGE); // Interrupt setup
 
-    // Pulse sounder and lamp to let operator know sensor is working
-    digitalWrite(SOUNDER_PIN, SOUNDER_LEVEL);
-    digitalWrite(LAMP_PIN, LAMP_LEVEL);
-    delay(flashspeed);
-    digitalWrite(SOUNDER_PIN, !SOUNDER_LEVEL);
-    digitalWrite(LAMP_PIN, !LAMP_LEVEL);
-    delay(flashspeed);
-    digitalWrite(SOUNDER_PIN, SOUNDER_LEVEL);
-    digitalWrite(LAMP_PIN, LAMP_LEVEL);
-    delay(flashspeed);
-    digitalWrite(SOUNDER_PIN, !SOUNDER_LEVEL);
-    digitalWrite(LAMP_PIN, !LAMP_LEVEL);
+    if (reset == 1)
+    {
+        // Pulse sounder and lamp to let operator know sensor is working
+        digitalWrite(SOUNDER_PIN, SOUNDER_LEVEL);
+        digitalWrite(LAMP_PIN, LAMP_LEVEL);
+        delay(flashspeed);
+        digitalWrite(SOUNDER_PIN, !SOUNDER_LEVEL);
+        digitalWrite(LAMP_PIN, !LAMP_LEVEL);
+        delay(flashspeed);
+        digitalWrite(SOUNDER_PIN, SOUNDER_LEVEL);
+        digitalWrite(LAMP_PIN, LAMP_LEVEL);
+        delay(flashspeed);
+        digitalWrite(SOUNDER_PIN, !SOUNDER_LEVEL);
+        digitalWrite(LAMP_PIN, !LAMP_LEVEL);
+    }
+
+    reset = 0;
 
     readeeprom(); // Read saved pressure value from EEPROM
 }
@@ -393,8 +473,9 @@ void setup()
  ******************************************************************************/
 void loop()
 {
+
 #ifdef WATCHDOG
-    wdt_reset();
+    wdt_reset(); // Reset watchdog timer
 #endif
 
     if (pulseflag == true)
@@ -415,10 +496,12 @@ void loop()
     {
         val = digitalRead(CALIBRATE_SW);
         if (val == CALIBRATE_LEVEL)
+        {
             calibrate();
+        }
         else
         {
-            digitalWrite(LAMP_PIN, LAMP_LEVEL);         //Briefly turn on lamp to show user cpu is working.
+            digitalWrite(LAMP_PIN, LAMP_LEVEL); // Briefly turn on lamp to show user cpu is working.
             delay(250);
 
             digitalWrite(LAMP_PIN, !LAMP_LEVEL);
